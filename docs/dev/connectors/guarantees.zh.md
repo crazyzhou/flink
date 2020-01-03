@@ -49,6 +49,11 @@ under the License.
             <td></td>
         </tr>
         <tr>
+            <td>Pravega</td>
+            <td>精确一次</td>
+            <td></td>
+        </tr>
+        <tr>
             <td>RabbitMQ</td>
             <td>至多一次 (v 0.10) / 精确一次 (v 1.0) </td>
             <td></td>
@@ -106,6 +111,11 @@ under the License.
         <td>Kafka producer</td>
         <td>至少一次 / 精确一次</td>
         <td>当使用事务生产者时，保证精确一次 (v 0.11+)</td>
+    </tr>
+    <tr>
+        <td>Pravega writer</td>
+        <td>至少一次 / 精确一次</td>
+        <td>当使用事务写客户端时，保证精确一次</td>
     </tr>
     <tr>
         <td>Cassandra sink</td>
