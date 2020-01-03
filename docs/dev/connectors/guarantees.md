@@ -52,6 +52,11 @@ Please read the documentation of each connector to understand the details of the
             <td></td>
         </tr>
         <tr>
+            <td>Pravega</td>
+            <td>exactly once</td>
+            <td>Use the appropriate mode</td>
+        </tr>
+        <tr>
             <td>RabbitMQ</td>
             <td>at most once (v 0.10) / exactly once (v 1.0) </td>
             <td></td>
@@ -111,6 +116,11 @@ state updates) of Flink coupled with bundled sinks:
         <td>Kafka producer</td>
         <td>at least once / exactly once</td>
         <td>exactly once with transactional producers (v 0.11+)</td>
+    </tr>
+    <tr>
+        <td>Pravega writer</td>
+        <td>at least once / exactly once</td>
+        <td>exactly once with transactional writers</td>
     </tr>
     <tr>
         <td>Cassandra sink</td>
